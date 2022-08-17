@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+html{
+    scroll-behavior: smooth;
+  }
+
+h1{
+  @apply font-pop font-bold text-3xl lg:text-4xl;
+}
+
+h2{
+  @apply font-pop font-semibold text-2xl lg:text-3xl;
+}
+h3{
+  @apply font-pop font-semibold text-2xl;
+}
+
+p{
+  @apply font-pop font-normal text-base lg:text-xl;
+}
+
+h6{
+  @apply font-pop font-light text-xs;
+}
+  
+  .navbar{
+      transition: box-shadow 0.5s ease-in-out;
+  }
+  
+  .navbar-fixed{
+      @apply fixed z-[10];
+      box-shadow: 0px -1px 10px 6px rgba(0,0,0,0.6);
+  }
+  
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-secondary-1 transition duration-300 ease-in-out rounded-full;
+  }
+  
+  .hamburger-active > span:nth-child(1){
+    @apply -translate-y-0.5 rotate-45;
+  }
+  .hamburger-active > span:nth-child(2){
+    @apply scale-0;
+  }
+  .hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
+  }
+
+.card{
+  @apply px-8 pt-5 pb-8 w-[360px] h-[580px] bg-primary shadow-[0_2px_10px_#132786] hover:shadow-[0_2px_20px_#132786] rounded-2xl text-center text-white mx-4 shrink-0;
+}
+
+.news{
+  @apply lg:items-center shrink-0 w-[380px] md:w-[480px] lg:h-[140px] h-[112px] bg-[#E1E1E1] rounded-2xl p-3 flex flex-wrap mb-4 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_4px_20px_rgba(0,0,0,1)];
+}
