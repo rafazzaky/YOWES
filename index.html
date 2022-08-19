@@ -12,8 +12,8 @@
 <header class="absolute bg-primary top-0 left-0 w-full h-[58px] flex justify-center items-center z-10 navbar">
     <div class="flex justify-center font-pop text-white p-2 lg:w-full lg:justify-between">
         <div class="text-[28px] flex items-center">
-            <!-- <img src="img/logoperforma.png" class="h-[30px] place-content-center translate-x-[16px] lg:translate-x-0 lg:translate-y-[2px] lg:mx-8" alt=""> -->
-            <span class="place-content-center translate-x-[16px] lg:translate-x-0 lg:translate-y-[2px] lg:mx-8">Loremipsum</span>
+            <img src="dist/img/logo.png" class="h-[30px] place-content-center translate-x-[16px] lg:translate-x-0 lg:translate-y-[2px] lg:mx-8" alt="">
+            <!-- <span class="place-content-center translate-x-[16px] lg:translate-x-0 lg:translate-y-[2px] lg:mx-8">Loremipsum</span> -->
         </div>
         <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -34,12 +34,12 @@
                     <li class="group">
                         <a href="#pns" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Products & Services</a>
                     </li>
-                    <li class="group">
+                    <!-- <li class="group">
                         <a href="#gallery" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Gallery</a>
-                    </li>
-                    <li class="group">
+                    </li> -->
+                    <!-- <li class="group">
                         <a href="#news" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">News</a>
-                    </li>
+                    </li> -->
                     <li class="group">
                         <a href="#contact" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Contact Us</a>
                     </li>
@@ -56,12 +56,12 @@
                     <li class="group">
                         <a href="#pns" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Products & Services</a>
                     </li>
-                    <li class="group">
+                    <!-- <li class="group">
                         <a href="#gallery" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Gallery</a>
-                    </li>
-                    <li class="group">
+                    </li> -->
+                    <!-- <li class="group">
                         <a href="#news" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">News</a>
-                    </li>
+                    </li> -->
                     <li class="group">
                         <a href="#contact" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Contact Us</a>
                     </li>
@@ -72,14 +72,14 @@
 </header>
 <!-- {{-- Navbar End --}} -->
     <!-- {{-- Section Home Start --}} -->
-    <section id="home" class="mt-[58px] bg-[#F5F5F5] pt-36 min-h-[640px] lg:pt-32 relative">
+    <section id="home" class="mt-[58px] bg-fixed pt-36 min-h-[640px] lg:pt-32 relative" style="background-image: url(dist/img/bghome.jpg)">
         <div class="px-8 lg:pt-16 flex flex-wrap justify-center lg:flex-row-reverse lg:items-center relative">
             <div class="w-full px-4 lg:px-8 lg:w-1/2 text-primary">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
             </div>
             <div class="w-full px-4 lg:px-8 mt-10 lg:w-1/2 lg:mt-0 lg:text-right">
-                <img src="https://source.unsplash.com/1600x900/?beach" alt="logo.png" class="w-full mx-auto lg:mr-0" width="380">
+                <img src="dist/img/logo.png" alt="logo.png" class="w-full mx-auto lg:mr-0" width="380">
             </div>
         </div>
     </section>
@@ -105,22 +105,25 @@
             <h1 class="truncate">Products & Service</h1>
         </div>
         <div class="relative">
-            <div class="xScroll w-full max-w-full overflow-x-scroll p-4 flex flex-row lg:justify-center">
+            <div class="xScroll w-full max-w-full overflow-x-scroll p-4 flex flex-row justify-center">
                 <div class="card ">
-                    <h2 class="mb-4 line-clamp-2">Produk 1</h2>
-                    <img src="https://source.unsplash.com/1200x900/?bike" alt="produk.png" class="mb-2">
-                    <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
+                    <h2 class="mb-4 line-clamp-2">Bike Rental</h2>
+                    <img src="dist/img/bikerental.jpg" alt="produk.png" class="mb-2 rounded-sm">
+                    <p class="mt-4 text-justify min-h-[100px]">Nikmati layanan bersepeda di Kota Malang bersama Yowes!</p>
+                    <button class="w-[220px] h-[80px] bg-slate-500 rounded-2xl my-6 px-5 py-3 text-white shadow-[0_2px_10px_#334155] hover:shadow-[0_2px_20px_#1e293b]">
+                        <h2 class="text-xl">Coming Soon!</h2>
+                    </button>
                 </div>
-                <div class="card ">
+                <!-- <div class="card ">
                     <h2 class="mb-4 line-clamp-2">Produk 2</h2>
                     <img src="https://source.unsplash.com/1200x900/?mountain#bike" alt="produk.png" class="mb-2 mx-auto">
                     <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-                </div>
-                <div class="card ">
+                </div> -->
+                <!-- <div class="card ">
                     <h2 class="mb-4 line-clamp-2">Produk 3</h2>
                     <img src="https://source.unsplash.com/1200x900/?electric#bike" alt="produk.png" class="mb-2">
                     <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -148,7 +151,7 @@
                 <div class="flex flex-wrap space-y-4">
                     <div class="w-full flex flex-wrap items-center">
                         <a href="" target="_blank" class="w-12 h-12 mr-3 rounded-full flex justify-center items-center border bg-secondary-2 text-light hover:bg-primary hover:text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <svg class="w-[30px] h-[30px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         </a>
                         <h2 class="text-lg">+62 81234567</h2>
                     </div>
@@ -169,6 +172,11 @@
         </div>
     </section>
     <!-- {{-- Section Contact Us End --}} -->
+    <!-- Footer Start -->
+    <footer class="bg-black h-8">
+
+    </footer>
+    <!-- Footer End -->
 <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
 <script src="dist/script.js"></script>
 </body>
