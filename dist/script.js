@@ -3,21 +3,39 @@ window.onscroll = function(){
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
-    if (window.pageYOffset > fixedNav){
+    if (window.pageYOffset > fixedNav + 58){
         header.classList.add('navbar-fixed');
     }
     else{
         header.classList.remove('navbar-fixed');
     }
 }
+//Header Background Fixed
+window.onresize = function(){
+    const header = document.querySelector('header');
+    const hamburger = document.querySelector('#hamburger');
+
+    if (window.innerWidth > 720){
+
+        header.classList.remove('header-active');
+    }
+    else if(hamburger.classList.contains('hamburger-active')){
+        header.classList.add('header-active');
+
+    }
+
+}
 // Hamburger
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 let menuList = document.querySelectorAll('a.menu-list');
+const header = document.querySelector('header');
+
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
+    header.classList.toggle('header-active');
 });
 
 for(const element of menuList){

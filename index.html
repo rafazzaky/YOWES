@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="dist/img/favicon.png">
+    <title>Yowes</title>
 </head>
 <body>
     <!-- {{-- Navbar Start --}} -->
-<header class="absolute bg-primary top-0 left-0 w-full h-[58px] flex justify-center items-center z-10 navbar">
-    <div class="flex justify-center font-pop text-white p-2 md:w-full md:justify-between">
+<header class="bg-transparent fixed top-0 left-0 w-full h-[58px] flex justify-center items-center z-10 navbar">
+    <div class="flex justify-center font-pop text-primary p-2 md:w-full md:justify-between">
         <div class="text-[28px] flex items-center">
-            <img src="dist/img/logo.png" class="h-[30px] place-content-center translate-x-[16px] md:translate-x-0 md:translate-y-[2px] md:mx-8" alt="">
+            <img src="dist/img/logo.png" class="h-[40px] place-content-center translate-x-[16px] md:translate-x-0 md:mx-8" alt="">
             <!-- <span class="place-content-center translate-x-[16px] md:translate-x-0 md:translate-y-[2px] md:mx-8">Loremipsum</span> -->
         </div>
         <div class="flex items-center px-4">
@@ -23,7 +24,7 @@
                 
             </button>
 
-            <nav id="nav-menu" class="hidden absolute py-2 bg-primary rounded-b-lg shadow-lg w-full right-0 left-0 top-full md:hidden">
+            <nav id="nav-menu" class="hidden absolute py-2 bg-white rounded-b-lg shadow-lg w-full right-0 left-0 top-full md:hidden">
                 <ul class="block divide-y divide-gray-700 md:divide-y-0 md:divide-x md:divide-red md:flex">
                     <li class="group">
                         <a href="#home" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Home</a>
@@ -48,13 +49,13 @@
             <nav id="nav-menu-md" class="hidden md:block py-2 w-full right-0 left-0 top-full static bg-transparent rounded-none shadow-none">
                 <ul class=" flex truncate">
                     <li class="group">
-                        <a href="#home" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Home</a>
+                        <a href="#home" id="navHome" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Home</a>
                     </li>
                     <li class="group">
-                        <a href="#about" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">About Us</a>
+                        <a href="#about" id="navAbt" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">About Us</a>
                     </li>
                     <li class="group">
-                        <a href="#pns" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Products & Services</a>
+                        <a href="#pns" id="navPns" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Products & Services</a>
                     </li>
                     <!-- <li class="group">
                         <a href="#gallery" class="menu-list place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-secondary-2">Gallery</a>
@@ -72,9 +73,9 @@
 </header>
 <!-- {{-- Navbar End --}} -->
     <!-- {{-- Section Home Start --}} -->
-    <section id="home" class="mt-[58px] bg-fixed pt-36 min-h-[640px] md:pt-32 relative" style="background-image: url(dist/img/bghome.jpg)">
+    <section id="home" class="bg-fixed pt-36 min-h-[640px] md:pt-32 relative">
         <div class="px-8 md:pt-16 flex flex-wrap justify-center md:flex-row-reverse md:items-center relative">
-            <div class="w-full px-4 md:px-8 md:w-1/2 text-primary">
+            <div class="w-full px-4 md:px-8 md:w-1/2 text-black">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
             </div>
@@ -91,27 +92,27 @@
             <h1>About Us</h1>
         </div>
         <div class="px-8 flex flex-wrap flex-col-reverse justify-center text-white md:flex-row md:divide-x md:divide-white">
-            <div class="w-full md:w-1/2 px-4 mt-10 md:mt-0">
-                <img src="https://source.unsplash.com/1600x900/?office" alt="" class="w-full max-w-[500px] mx-auto ">
+            <div class="w-full md:w-1/2 px-8 mt-10 md:mt-0">
+                <img src="https://source.unsplash.com/1600x900/?office" alt="" class="w-full max-w-[500px] ml-auto mr-0 rounded-md shadow-md">
             </div>
-            <div class="w-full md:w-1/2 px-4 md:pl-8">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.</p>
+            <div class="w-full md:w-1/2 px-8">
+                <p>Yowes merupakan website layanan On-demand atau Utility berbasis mobile apps lintas platform sebagai alternatif moda transportasi secara berkelanjutan dalam mempermudah mobilitas di kegiatan sehari-harinya.</p>
             </div>
         </div>
     </section>
     <!-- {{-- Section About Us End --}} -->
     <!-- {{-- Section Products & Services Start --}} -->
     <section id="pns" class="bg-secondary-2 pt-28 pb-32 relative">
-        <div class="absolute text-primary top-6 left-1/2 -translate-x-1/2">
+        <div class="absolute text-white top-6 left-1/2 -translate-x-1/2">
             <h1 class="truncate">Products & Service</h1>
         </div>
         <div class="relative">
             <div class="xScroll w-full max-w-full overflow-x-scroll p-4 flex flex-row justify-center">
                 <div class="card ">
                     <h2 class="mb-4 line-clamp-2">Bike Rental</h2>
-                    <img src="dist/img/bikerental.jpg" alt="produk.png" class="mb-2 rounded-sm">
-                    <p class="mt-4 text-justify min-h-[100px]">Nikmati layanan bersepeda di Kota Malang bersama Yowes!</p>
-                    <button class="w-[220px] h-[80px] bg-slate-500 rounded-2xl my-6 px-5 py-3 text-white shadow-[0_2px_10px_#334155] hover:shadow-[0_2px_20px_#1e293b]">
+                    <img src="dist/img/bikerental.jpg" alt="produk.png" class="mb-2 rounded-md">
+                    <p class="mt-4 text-justify min-h-[80px]">Nikmati layanan bersepeda di Kota Malang bersama Yowes!</p>
+                    <button class="w-[220px] h-[80px] bg-slate-500 rounded-2xl my-0 px-5 py-3 text-white shadow-[0_2px_10px_#334155] hover:shadow-[0_2px_20px_#1e293b]">
                         <h2 class="text-xl">Coming Soon!</h2>
                     </button>
                 </div>
@@ -139,15 +140,14 @@
         </div>
         <div class="flex flex-wrap relative text-primary">
             <div class="w-full md:w-1/2 mb-4 md:pr-2">
-                <h1>LOREM</h1>
-                <p>Jika anda memiliki pertanyaan seputar LOREM, hubungi kami melalui kontak di laman ini.</p>
+                <img src="dist/img/logo.png" alt="logo.png" class="h-[36px] left-0 scale-150 origin-bottom-left">
+
+                <p>Yowes yang merupakan website berbasis mobile apps lintas platform yang bertujuan untuk mempermudah masyarakat Kota Malang yang ingin bersepeda di manapun dan kapan pun. </p>
             </div>
             <div class="w-full md:w-1/2 flex flex-wrap md:pl-2">
                 <div class="w-full text-left md:text-right mb-8">
-                    <h2>Alamat</h2>
-                    <p>Jl. Mana aja <br>
-                        Kecamatan <br>
-                        Kota<p>
+                    <h2 class="text-black">Alamat</h2>
+                    <p>Gedung Kuliah Poltek, Jl. Veteran No.8<br>Ketawanggede, Kec. Lowokwaru<br>Kota Malang, Jawa Timur 65145<p>
                 </div>
                 <div class="flex flex-wrap space-y-4">
                     <div class="w-full flex flex-wrap items-center">
@@ -160,7 +160,7 @@
                         <a href="" target="_blank" class="w-12 h-12 mr-3 rounded-full flex justify-center items-center border bg-secondary-2 text-light hover:bg-primary hover:text-white">
                             <svg class="w-[30px] h-[30px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         </a>
-                        <h2 class="text-lg">hahaha@haha.com</h2>
+                        <h2 class="text-lg">yowes.pmw@gmail.com</h2>
                     </div>
                     <div class="w-full flex flex-wrap items-center">
                         <a href="" target="_blank" class="w-12 h-12 mr-3 rounded-full flex justify-center items-center border bg-secondary-2 text-light hover:bg-primary hover:text-white">
@@ -174,8 +174,8 @@
     </section>
     <!-- {{-- Section Contact Us End --}} -->
     <!-- Footer Start -->
-    <footer class="bg-black h-8">
-
+    <footer class="bg-black h-8 text-slate-400 px-4 flex items-center">
+        <h2 class="font-mono text-xs">@Yowes 2022. Hak Cipta Dilindungi</h2>
     </footer>
     <!-- Footer End -->
 <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
