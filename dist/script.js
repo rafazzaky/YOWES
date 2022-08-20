@@ -74,4 +74,24 @@ $(function() {
     });
 });
 
+//Active Navbar
+var addClassOnScroll = function () {
+    var windowTop = $(window).scrollTop();
+    $('section[id]').each(function (index, elem) {
+        var offsetTop = $(elem).offset().top;
+        var outerHeight = $(this).outerHeight(true);
+
+        if( windowTop > (offsetTop - 200) && windowTop < ( offsetTop + outerHeight)) {
+            var elemId = $(elem).attr('id');
+            $("nav.navLg ul li a.navActive").removeClass('navActive');
+            $("nav.navLg ul li a[href='#" + elemId + "']").addClass('navActive');
+        }
+    });
+};
+
+$(function () {
+    $(window).on('scroll', function () {
+        addClassOnScroll();
+    });
+});
 

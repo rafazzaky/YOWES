@@ -27,7 +27,8 @@ h6{
 }
   
   .navbar{
-      transition: box-shadow 0.5s ease-in-out;
+      transition: box-shadow 0.5s ease-in-out,
+                  background-color 0.5s ease-in-out;
   }
   
   .navbar-fixed{
@@ -53,7 +54,7 @@ h6{
   }
 
   .navActive{
-    @apply underline underline-offset-8;
+    @apply underline underline-offset-8 decoration-2;
   }
 .card{
   @apply px-8 pt-5 pb-8 w-[360px] min-h-[500px] bg-primary shadow-[0_2px_10px_#132786] hover:shadow-[0_2px_20px_#132786] rounded-2xl text-center text-white mx-4 shrink-0;
