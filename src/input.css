@@ -57,7 +57,7 @@ h6{
     @apply underline underline-offset-8 decoration-2;
   }
 .card{
-  @apply px-8 pt-5 pb-8 w-[360px] min-h-[500px] bg-primary shadow-[0_2px_10px_#132786] hover:shadow-[0_2px_20px_#132786] rounded-2xl text-center text-white mx-4 shrink-0;
+  @apply px-8 pt-5 pb-8 w-[360px] min-h-[500px] bg-gradient-to-r from-cyan-500 to-blue-500 shadow-[0_2px_10px_#132786] rounded-2xl text-center text-white mx-4 shrink-0;
 }
 
 .news{
